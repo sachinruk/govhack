@@ -1,5 +1,6 @@
 setwd("Documents/thesis/govHack/")
-cancerData=read.csv(url("http://data.gov.au/dataset/05696f6f-6ff5-42a2-904f-af5e4d1f56f8/resource/7fbac314-4bf9-4601-b812-0307316ef5a4/download/acimcombinedcounts.csv"))
+#download.file("http://data.gov.au/dataset/05696f6f-6ff5-42a2-904f-af5e4d1f56f8/resource/7fbac314-4bf9-4601-b812-0307316ef5a4/download/acimcombinedcounts.csv",destfile = "data.csv")
+cancerData=read.csv("data.csv")
 
 cancerCombined=cancerData[cancerData$Sex=="Persons" & cancerData$Type=="Incidence",] #focus on just male and female combined
 #get rid of missing value ones
@@ -32,7 +33,7 @@ set.seed(1)
 covData.npn=huge.npn(covData)
 out.npn = huge(covData.npn,method = "glasso", lambda = linspace(0.99,0.97,100))
 
-adj_mat=out.npn$path[[100]]
+adj_mat=out.npn$path[[5]]
 rownames(adj_mat)=cancer_type
 colnames(adj_mat)=cancer_type
 ig<-graph.adjacency(adj_mat,mode="undirected")
