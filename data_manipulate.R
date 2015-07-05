@@ -31,15 +31,21 @@ res_combined=as.data.frame(res_combined)
 extra_years=as.character(names(predictions[1,9:18]))
 res_combined[,extra_years]=NA
 #res_combined=as.matrix(res_combined)
+#for (i in 1:63)
+#  people=rowSums(as.numeric(predictions[(2*i-1):(2*i),]))
+
 l=1
 for (k in 1:length(status))
   for (j in 1:length(gender))
     for (i in 1:length(cancer_type)){
+      
       preds=predictions[predictions$Cancer==cancer_type[i] & 
         predictions$Gender==as.character(gender[j]) &
         predictions$Status==status[k],9:18]
       if (dim(preds)[1]) #if there exists any dimensions
         res_combined[l,extra_years]=preds
+      if (gender[j]=="Persons")
+        
       l=l+1;
     }
 
