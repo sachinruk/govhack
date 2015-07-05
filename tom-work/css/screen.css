@@ -1,0 +1,111 @@
+#header {
+  background-color: #f7f7f7;
+  text-align: center;
+  padding: 20px 0px;
+  border-bottom: 2px solid #cccccc; }
+  #header .logo {
+    width: 170px; }
+
+#signUpSection {
+  background-color: #470054;
+  color: #fff;
+  text-align: center;
+  font-size: 17px;
+  padding: 40px 0; }
+  #signUpSection .text {
+    margin-bottom: 30px; }
+  #signUpSection input {
+    padding: 10px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    border-radius: 4px;
+    color: #470054; }
+  #signUpSection input[type="radio"] {
+    margin-right: 4px; }
+  #signUpSection a {
+    background-color: #6c217f;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    margin-left: 10px;
+    padding: 12px 20px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: bold; }
+  #signUpSection a:hover {
+    text-decoration: none;
+    background-color: #333; }
+  #signUpSection .signedUp {
+    display: none; }
+
+#copyrightSection {
+  color: #333333;
+  padding: 10px 0px 10px 40px;
+  font-size: 17px; }
+
+.indexPage #mainSection {
+  background: url(../img/homeBackground.jpg);
+  background-size: 100% auto;
+  text-align: center;
+  color: #333333;
+  padding-top: 80px;
+  padding-bottom: 100px; }
+  @media (max-width: 767px) {
+    .indexPage #mainSection {
+      background-size: auto 100%; } }
+  .indexPage #mainSection h2 {
+    font-weight: bold;
+    margin-bottom: 30px; }
+  .indexPage #mainSection .projectDescription {
+    font-size: 17px; }
+  .indexPage #mainSection .purple {
+    color: #470054; }
+  .indexPage #mainSection .button a {
+    color: #470054;
+    background-color: #fff;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    border-radius: 4px;
+    border: 1px solid #cccccc;
+    font-size: 18px;
+    padding: 20px;
+    margin-top: 60px;
+    display: inline-block;
+    -webkit-box-shadow: #cccccc 2px 2px 10px;
+    -moz-box-shadow: #cccccc 2px 2px 10px;
+    box-shadow: #cccccc 2px 2px 10px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: bold; }
+  .indexPage #mainSection .button a:hover {
+    text-decoration: none;
+    background-color: #333;
+    color: white; }
+
+.homePage .forceDirectedGraph {
+  padding-top: 40px; }
+.homePage .currentSelection {
+  text-align: center; }
+.homePage .lineGraph {
+  position: relative; }
+.homePage .vertical {
+  position: absolute;
+  top: 300px;
+  left: -60px;
+  font-size: 18px; }
+.homePage .horizontal {
+  font-size: 18px;
+  position: absolute;
+  bottom: 25px;
+  left: 50%; }
+
+/*@ sourceMappingURL=screen.css.map */

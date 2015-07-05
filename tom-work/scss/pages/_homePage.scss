@@ -1,0 +1,29 @@
+
+
+.homePage {
+	.forceDirectedGraph {
+		padding-top: 40px;
+	}
+
+	.currentSelection {
+		text-align: center;
+	}
+
+	.lineGraph {
+		position: relative;
+	}
+
+	.vertical {
+		position: absolute;
+		top: 300px;
+		left: -60px;
+		font-size: 18px;
+	}
+
+	.horizontal {
+		font-size: 18px;
+		position: absolute;
+		bottom: 25px;
+		left: 50%;
+	}
+}

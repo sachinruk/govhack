@@ -1,0 +1,43 @@
+body {
+  font: 10px sans-serif;
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+.x.axis path {
+  display: none;
+}
+
+.line {
+  fill: none;
+  stroke: steelblue;
+  stroke-width: 6px;
+}
+
+.line.primary {
+	stroke: #470054;
+}
+
+.lineGraph text {
+	font-size: 14px;
+	font-weight: bold;
+}
+
+.lineGraph .y.axis text {
+	transform: translateX(-10px);
+}
+
+.lineGraph .x.axis text {
+	transform: translateY(10px);
+}
+
+.lineGraph svg {
+	margin: 60px 0px;
+	overflow: visible;
+	background-color: #f7f7f7;
+}
