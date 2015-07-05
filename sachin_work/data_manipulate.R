@@ -44,7 +44,7 @@ for (k in 1:length(status))
         predictions$Status==status[k],9:18]
       if (dim(preds)[1]) #if there exists any dimensions
         res_combined[l,extra_years]=preds
-      if (gender[j]=="Persons")
+      #if (gender[j]=="Persons")
         
       l=l+1;
     }
